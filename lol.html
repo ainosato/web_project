@@ -1,16 +1,55 @@
 <!doctype html>
 <html>
 <head>
-  <title>League of Legend Jungle</title>
+  <title>League of Legend</title>
   <meta charset="utf-8">
+  <style>
+    /* body {
+      margin: 0;
+    } */
+    a {             /* 태그 선택자(우선순위 가장 낮음) */
+      color: black;
+      text-decoration: none;
+    }
+    a:visited {
+      color: yellow;
+    }
+    h1 {
+      font-size: 300%;
+      text-align: center;
+      border-bottom:1px solid gray;
+      padding: 20px;
+      margin: 0;
+    }
+    #active {        /*id 선택자가 우선순위 가장 높음, id 값은 한 번만 사용해야 된다*/
+      color:red;
+    }
+    .saw {           /*클래스 선택자*/
+      color:blue;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href = "lol.html" target="_blank">League of Legend</a></h1>
+  <h1><a href = "lol.html">League of Legend</a></h1>
 <ol>
-    <li><a href = "1.html" target="_blank">그레이브즈</a></li>
-    <li><a href = "2.html" target="_blank">에코</a></li>
-    <li><a href = "3.html" target="_blank">트런들</a></li>
+    <li><a href = "1.html" class="saw">그레이브즈</a></li>
+    <li><a href = "2.html" class="saw" id="active">에코</a></li>
+    <li><a href = "3.html">트런들</a></li>
+    <li><a href = "4.html">리 신</a></li>
 </ol>
+<!-- <h1><a href = "lol.html">League of Legend</a></h1>
+<ol>
+  <li><a href = "1.html"><font color = "red">그레이브즈</font></a></li>
+  <li><a href = "2.html"><font color = "red">에코</font></a></li>
+  <li><a href = "3.html"><font color = "red">트런들</font></a></li>
+  <li><a href = "4.html"><font color = "red">리 신</font></a></li>
+</ol> -->
   <h2>리그오브레전드에 대해서</h2>
   <p>리그오브레전드에는 미드, 정글, 원딜, 서폿, 탑 총 5개의 라인이 있다. 이 웹에서는 정글에 대해서 알아보자 </p>
   <img src="lol.png" width="450"> <br><br>
