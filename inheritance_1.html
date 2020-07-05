@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      /* li {
+        color: red;
+      }
+      h1 {
+        color: red;
+      } */
+      html { /*color는 상속 됨*/
+        color: red;
+      }
+      #select {
+        color: black;
+      }
+      body {   /*border는 상속 안됨*/
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>수업내용</h1>
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li id="select">javascript</li>
+    </ul>
+  </body>
+</html>
