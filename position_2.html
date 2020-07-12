@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #parent, #other {
+        border: 5px solid tomato;
+      }
+      #parent {
+        position: relative;  /*absolute 부모의 position이 static이 아닐 때 그 부모를 기준으로 위치를 지정한다 */
+      }
+      #me {
+        background-color: black;
+        color: white;
+        position: absolute;   /*absolute는 부모와 관계가 끊어짐 */
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">
+      other
+    </div>
+    <div id="parent">
+      parent
+      <div id="me">
+        me
+      </div>
+    </div>
+
+  </body>
+</html>
